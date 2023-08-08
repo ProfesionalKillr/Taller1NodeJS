@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/consultarhabitaciones.css">
+    <link rel="Icon" href="../assets/img/hotelia campana.svg">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <title>Busqueda habitaciones</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="menu-lateral">
+            <div class="logo-user">
+                <div class="logo">
+                    <img src="../assets/img/hotelia campana.svg" alt="logo-empresa">
+                </div>
+
+                <div class="user">
+                    <div class="foto">
+                        <img src="../assets/img/opiniones/user1.png" alt="Diego">
+                    </div>
+                    <div class="name">
+                        <h1>
+                            Diego Rodriguez
+                        </h1>
+                        <p>
+                            diegorodriguez123@gmail.com
+                        </p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="options__menu">	
+
+                <a href="habitaciones.html" class="selected">
+                    <div class="option">
+                        <i class="fa-solid fa-bed" title="Habitaciones"></i>
+                        <h4>Habitaciones</h4>
+                    </div>
+                </a>
+
+                <a href="registerhabitaciones.html" class="selected">
+                    <div class="option">
+                        <i class="fa-solid fa-bed" title="Registrar Habitaciones"></i>
+                        <h4>Registrar Habitaciones</h4>
+                    </div>
+                </a>
+
+                <a href="consultahabitaciones.html" class="selected">
+                    <div class="option">
+                        <i class="fa-solid fa-bed" title="Buscar Habitaciones"></i>
+                        <h4>Buscar Habitaciones</h4>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div class="option">
+                        <i class="fa-solid fa-bell-concierge" title="Reservas"></i>
+                        <h4>Mis Reservas</h4>
+                    </div>
+                </a>
+                
+                <a href="dashboard.html">
+                    <div class="option">
+                        <i class="fa-solid fa-pencil" title="Editar Perfil"></i>
+                        <h4>Editar Perfil</h4>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="sali">
+                <a href="../index.html" class="op">
+                    <div class="option1">
+                        <i class="fa-solid fa-arrow-right-from-bracket" title="Cerrar Sesion"></i>
+                        <h4>Cerrar Sesion</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="tdo">
+            <div class="container_form">
+    
+                <h1>Busqueda de habitaciones</h1>
+                
+                <form action="">
+                    <div class="op">
+                        <div class="details">
+                            <label for="">Entrada:</label>
+                            <input type="date"">
+                        </div>
+        
+                        <div class="details">
+                            <label for="">Salida:</label>
+                            <input type="date">
+                        </div>
+        
+                        <div class="details">
+                            <label for="">Adultos:</label>
+                            <select required>
+                                <option value=""></option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </div>
+        
+                        <div class="details">
+                            <label for="">Niños:</label>
+                            <select required>
+                                <option value=""></option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="btn">
+                        <button type="submit">Ver habitaciones disponibles</button>
+                    </div>
+                    
+                </form>
+    
+            </div>
+    
+            <div class="rooms">
+    
+                <div class="room">
+    
+                    <div class="room_card">
+                        <p>Habitacion doble</p>
+                    </div>
+    
+                    <h3>128.000</h3>
+    
+                    <div class="btn_r">
+                        <button>Reservar</button>
+                    </div>
+                </div>
+                <div class="room">
+    
+                    <div class="room_card">
+                        <p>Habitacion doble</p>
+                    </div>
+    
+                    <h3>128.000</h3>
+    
+                    <div class="btn_r">
+                        <button class="active">Reservar</button>
+                    </div>
+                </div>
+                <div class="room" id="room_3">
+    
+                    <div class="room_card">
+                        <p>Habitacion doble</p>
+                    </div>
+    
+                    <h3>128.000</h3>
+    
+                    <div class="btn_r">
+                        <button>Reservar</button>
+                    </div>
+                </div>
+                <div class="room" id="room_4">
+    
+                    <div class="room_card">
+                        <p>Habitacion doble</p>
+                    </div>
+    
+                    <h3>128.000</h3>
+    
+                    <div class="btn_r">
+                        <button class="active">Reservar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

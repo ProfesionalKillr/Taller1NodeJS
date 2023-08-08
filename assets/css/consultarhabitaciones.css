@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #cccbcb;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+}
+
+body {
+    display: flex;
+}
+
+
+header {
+    background: var(--azulnegro);
+    width: 14em;
+    height: 100vh;
+
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo-user {
+    background: var(--degradado);
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-user .logo {
+    background-image: url(../img/opiniones/Vector-opinion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo-user .logo img {
+    width: 4em;
+    padding: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: var(--blanco);
+}
+
+.user .foto {
+    display: flex;
+    align-items: flex-end;
+    width: 3em;
+}
+
+.user .foto img {
+    width: 100%;
+}
+
+.user .name {
+    padding-left: 15px;
+    font-size: 8px
+}
+
+.options__menu {
+    margin-top: 15px;
+    height: 25em;
+}
+
+.options__menu a {
+    width: 100%;
+    padding: 5px 30px;
+    color: var(--blanco);
+    cursor: default;
+    display: block;
+    transition: color 300ms;
+}
+
+.options__menu a:hover {
+    background: var(--azuloscuro);
+}
+
+.options__menu .option {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.options__menu .option i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h4 {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.sali .option1 {
+    background: #373841;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    color: var(--blanco);
+}
+
+.sali .option1 i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.sali .option1 h4 {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+/* FORM AND ROOM */
+
+main{
+    background: var(--gris);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tdo{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.container_form {
+    width:28em ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_form h1{
+    background: var(--azuloscuro);
+    font-size: 1.5em;
+    color: var(--blanco);
+    padding: 0.2em;
+    width: 13em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.container_form form {
+    padding: 15px;
+    margin-top: 15px;
+    background: var(--blanco);
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 4px 3px 0px #3379b762;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form .op{
+    width: 95%;
+}
+
+.container_form .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    color: var(--negro2);
+    font-weight: 700;
+}
+
+.details input {
+    width: 14em;
+    border: 1px solid #F0F0F0;
+    border-radius: 5px;
+    height: 5vh;
+    padding: 1em;
+}
+
+.details select {
+    background: var(--gris);
+    border: 1px solid #F0F0F0;
+    border-radius: 5px;
+    width: 14em;
+    height: 5vh;
+    padding-left: 1em;
+}
+
+.container_form .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin-top: 2em;
+
+}
+
+.btn button {
+    width: 100%;
+    height: 2em;
+    text-decoration: none;
+    border: 1px solid #000;
+    background: #000;
+    border-radius: 3px;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.rooms {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--blanco);
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 0px #00000065;
+    width: 38vh;
+    height: 38vh;
+    margin: 1em;
+    padding: 20px;
+}
+
+.room_card {
+    background: url(../img/habitacion1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 10em;
+
+}
+
+.room_card p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3379b7b2;
+    width: 100%;
+    height: 5vh;
+    color: var(--blanco);
+}
+
+.room h3 {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: 590;
+}
+.room .btn_r{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.room button {
+    width: 100%;
+    height: 1.5em;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #000;
+    border-radius: 3px;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 200;
+}
+
+.room button.active {
+    border: 1px solid var(--azuloscuro);
+    border-radius: 5px;
+    background: var(--azuloscuro);
+}
+
+.details input::-webkit-calendar-picker-indicator {
+    background: url(../img/calendar-days-solid.svg);
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.details input::-webkit-datetime-edit-month-field {
+    color: var(--negro2);
+}
+
+.details input::-webkit-datetime-edit-day-field {
+    color: var(--negro2);
+}
+
+.details input::-webkit-datetime-edit-year-field {
+    color: var(--negro2);
+}
+
+
+.details input {
+    background: var(--gris);
+    color: var(--azulclaro);
+}
+
+.room button:hover {
+    background: var(--azuloscuro);
+    border: 1px solid var(--azuloscuro);
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        width: 5em;
+        height: auto;
+    }
+
+    .options__menu h4 {
+        display: none;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .sali h4 {
+        display: none;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .tdo{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .container_form {
+        width: 90%;
+    }
+
+    .container_form h1{
+        font-size: 1.1em;
+    }
+    .container_form .btn{
+        width: 100%;
+    }
+
+    .rooms {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+
+
+
+
+
+    #room_3 {
+        display: none;
+    }
+
+    #room_4 {
+        display: none;
+    }
+
+
+}

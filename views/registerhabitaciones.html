@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/registerhabitaciones.css">
+    <link rel="Icon" href="../assets/img/hotelia campana.svg">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <title>Registro Habitaciones</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-lateral">
+            <div class="logo-user">
+                <div class="logo">
+                    <img src="../assets/img/hotelia campana.svg" alt="logo-empresa">
+                </div>
+
+                <div class="user">
+                    <div class="foto">
+                        <img src="../assets/img/opiniones/user1.png" alt="Diego">
+                    </div>
+                    <div class="name">
+                        <h1>
+                            Diego Rodriguez
+                        </h1>
+                        <p>
+                            diegorodriguez123@gmail.com
+                        </p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="options__menu">	
+
+                <a href="habitaciones.html" class="selected">
+                    <div class="option">
+                        <i class="fa-solid fa-bed" title="Habitaciones"></i>
+                        <h4>Habitaciones</h4>
+                    </div>
+                </a>
+
+                <a href="registerhabitaciones.html" class="selected">
+                    <div class="option">
+                        <i class="fa-solid fa-bed" title="Registrar Habitaciones"></i>
+                        <h4>Registrar Habitaciones</h4>
+                    </div>
+                </a>
+
+                <a href="consultahabitaciones.html" class="selected">
+                    <div class="option">
+                        <i class="fa-solid fa-bed" title="Buscar Habitaciones"></i>
+                        <h4>Buscar Habitaciones</h4>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div class="option">
+                        <i class="fa-solid fa-bell-concierge" title="Reservas"></i>
+                        <h4>Mis Reservas</h4>
+                    </div>
+                </a>
+                
+                <a href="dashboard.html">
+                    <div class="option">
+                        <i class="fa-solid fa-pencil" title="Editar Perfil"></i>
+                        <h4>Editar Perfil</h4>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="sali">
+                <a href="../index.html" class="op">
+                    <div class="option1">
+                        <i class="fa-solid fa-arrow-right-from-bracket" title="Cerrar Sesion"></i>
+                        <h4>Cerrar Sesion</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="container_form">
+
+            <p>Registro de nueva habitación</p>
+            <form action="">
+
+                <div class="op">
+                    <div class="details_1">
+                        <label for="">Nombre habitación</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="details_2">
+                        <label for="">N° habitación</label>
+                        <input type="text">
+                    </div>
+                </div>
+                
+                <div class="op1">
+                    <div class="details_3">
+
+                        <div class="cama">
+                            <label id="label_1">N° camas</label>
+                            
+                            <div class="maso">
+                                <div class="button_1" onclick="decrement()">
+                                    <i class="fa-solid fa-minus" style="color: #ffffff;"></i>
+                                </div>
+                                
+                                <div class="number_1" id="counter"></div>
+            
+                                <div class="button_1-" onclick="increment()">
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="hue">
+
+                            <label id="label_2" for="">N° huéspedes</label>
+        
+                            <div class="maso">
+                                <div class="button_2" onclick="decrement_()">
+                                    <i class="fa-solid fa-minus" style="color: #ffffff;"></i>
+                                </div>
+            
+                                <div class="number_2" id="counter_"></div>
+            
+                                <div class="button_2-" onclick="increment_()">
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="details_4">
+                        <label for="">Valor reserva</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="op2">
+                    <div class="details_5">
+                        <label for="">Imagen Principal</label>
+                        <input type="text">
+                    </div>
+    
+                    <div class="details_6">
+                        <label for="">Imagen Secundaria</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+
+                <div class="details_7">
+                    <label for="">Descripción</label>
+                    <input type="text">
+                </div>
+
+                <div class="details_8">
+                    <div class="ther">
+                        <input type="checkbox"><i class="fa-solid fa-vault fa-flip-horizontal"></i>
+                        <input type="checkbox"><i class="fa-solid fa-tv"></i>
+                        <input type="checkbox"><i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <div class="cuet">
+
+                        <input type="checkbox"><i class="fa-solid fa-snowflake"></i>
+                        <input type="checkbox"><i class="fa-solid fa-bell-concierge"></i>
+                        <input type="checkbox"><i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <button type="submit">Registrar</button>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+
+    <script>
+        // Funciones para incrementar y decrementar el número
+        let count = 0;
+
+        let count_ = 0;
+
+        function increment() {
+            count++;
+            updateNumber();
+        }
+
+        function decrement() {
+            count--;
+            updateNumber();
+        }
+
+        function updateNumber() {
+            document.getElementById("counter").textContent = count;
+        }
+
+
+        function increment_() {
+            count_++;
+            updateNumber_();
+        }
+
+        function decrement_() {
+            count_--;
+            updateNumber_();
+        }
+
+        function updateNumber_() {
+            document.getElementById("counter_").textContent = count_;
+        }
+    </script>
+
+</body>
+
+</html>

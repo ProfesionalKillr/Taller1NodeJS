@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+}
+
+body {
+    display: flex;
+}
+
+
+header {
+    display: flex;
+    background: var(--azulnegro);
+    width: 14em;
+    height: 100vh;
+
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo-user {
+    background: var(--degradado);
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-user .logo{
+    background-image: url(../img/opiniones/Vector-opinion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo-user .logo img {
+    width: 4em;
+    padding: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: var(--blanco);
+}
+
+.user .foto {
+    display: flex;
+    align-items: flex-end;
+    width: 3em;
+}
+
+.user .foto img {
+    width: 100%;
+}
+
+.user .name {
+    padding-left: 15px;
+    font-size: 8px
+}
+
+.options__menu {
+    margin-top: 15px;
+    height: 25em;
+}
+
+.options__menu a {
+    width: 100%;
+    padding: 5px 30px;
+    color: var(--blanco);
+    cursor: default;
+    display: block;
+    transition: color 300ms;
+}
+
+.options__menu a:hover {
+    background: var(--azuloscuro);
+}
+
+.options__menu .option {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.options__menu .option i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h4 {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.sali{
+    margin-top: 3em;
+}
+
+.sali .option1 {
+    background: #373841;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    color: var(--blanco);
+}
+
+.sali .option1 i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.sali .option1 h4 {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* FORM REGISTER */
+main {
+    display: flex;
+    background: url(../img/dormitorio.jpg);
+    background-repeat: space;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container_form {
+    background-color: #ffffff98;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.container_form p{
+    margin: 1rem;
+    font-size: 2.5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+form .op{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+form .details_1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+form .details_1 input {
+    margin-top: 5px;
+    height: 1.6rem;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+    border-radius: 2px;
+}
+
+form .details_2 {
+    display: flex;
+    flex-direction: column;
+}
+
+form .details_2 input {
+    width: 20rem;
+    margin-top: 5px;
+    height: 1.6rem;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+    border-radius: 2px;
+} 
+
+form .op1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+form .details_3 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.cama{
+    display: flex;
+    flex-direction: column;
+}
+
+.cama .maso{
+    display: flex;
+    margin-top: 5px;
+}
+
+.button_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    cursor: pointer;
+    background-color: var(--negro2);
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.button_1- {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    cursor: pointer;
+    background-color: var(--negro2);
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.number_1 {
+    width: 7em;
+    height: 3.7vh;
+    display: block;
+    padding: 0 0 0 55px;
+    background-color: var(--blanco);
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+}
+
+.hue .maso{
+    display: flex;
+    margin-top: 5px;
+}
+
+.button_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    cursor: pointer;
+    background-color: var(--negro2);
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.button_2- {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    cursor: pointer;
+    background-color: var(--negro2);
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.number_2 {
+    width: 7em;
+    height: 3.7vh;
+    display: block;
+    padding: 0 0 0 45px;
+    background-color: var(--blanco);
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+}
+
+
+form .details_4 {
+    display: flex;
+    flex-direction: column;
+}
+
+form .details_4 input {
+    margin-top: 5px;
+    width: 20rem;
+    height: 1.6rem;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+    border-radius: 2px;
+}
+
+
+form .op2{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+form .details_5 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form .details_5 input {
+    margin-top: 5px;
+    height: 1.6rem;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+    border-radius: 2px;
+}
+
+form .details_6 {
+    display: flex;
+    flex-direction: column;
+}
+
+form .details_6 input {
+    margin-top: 5px;
+    width: 20rem;
+    height: 1.6rem;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+    border-radius: 2px;
+}
+
+form .details_7 {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form .details_7 input {
+    margin-top: 5px;
+    height: 6rem;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: #FFFEFC;
+    border-radius: 2px;
+}
+
+form .details_8 {
+    margin-top: 2em;
+    display: flex;
+    width: 100%;
+}
+
+form .details_8 .ther{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+form .details_8 .cuet{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+form .details_8 input {
+    box-sizing: border-box;
+    box-shadow: 0px 2px 0px #00000038;
+    border: 10px #ffffff;
+    border-radius: 12px;
+}
+
+form .details_8 i {
+    font-size: 1.7rem;
+}
+
+.container_form .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.container_form button {
+    width: 210px;
+    height: 2em;
+    text-decoration: none;
+    border: 1px solid var(--negro);
+    background: var(--negro);
+    border-radius: 3px;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        width: 5em;
+        height: auto;
+    }
+
+    .options__menu h4 {
+        display: none;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .sali h4 {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .container_form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .container_form p {
+        font-size: 1.7em;
+        width: 70%;
+        text-align: center;
+    }
+
+    form .op{
+        flex-direction: column;
+        width: 100%;
+    }
+    form .details_1 {
+        width: 100%;
+    }
+    form .details_2 {
+        margin-top: 1em;
+        width: 100%;
+    }
+    form .details_2 input {
+        width: 100%;
+    }
+
+    form .op1{
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    form .details_3{
+        width: 100%;
+    }
+
+    form .details_3 .number_1 {
+        width: 4.5em;
+    }
+
+    form .details_3 .number_2 {
+        width: 4.5em;
+    }
+
+    form .details_4 {
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    form .details_4 input{
+        width: 100%;
+    }
+
+    form .op2{
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    form .details_5 {
+        width: 100%;
+    }
+
+    form .details_6{
+        margin-top: 1em;
+    }
+
+    form .details_6 input{
+        width: 100%;
+    }
+
+    form .details_7 {
+        margin-top: 1em;
+    }
+
+    form .details_8 {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form .details_8 .ther{
+        width: 100%;
+    }
+
+    form .details_8 .cuet{
+        margin-top: 5px;
+        width: 100%;
+    }
+    form .details_8 i {
+        font-size: 2rem;
+    }
+
+
+    .container_form .btn {
+        margin-top: 2em;
+    }
+
+    .container_form button {
+        width: 170px;
+        height: 2em;
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #cccbcb;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --vino:#9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+}
+
+body {
+    display: flex;
+}
+
+header {
+    background: var(--azulnegro);
+    width: 14em;
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-user {
+    background: var(--degradado);
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-user .logo {
+    background-image: url(../img/opiniones/Vector-opinion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo-user .logo img {
+    width: 4em;
+    padding: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: var(--blanco);
+}
+
+.user .foto {
+    display: flex;
+    align-items: flex-end;
+    width: 3em;
+}
+
+.user .foto img {
+    width: 100%;
+}
+
+.user .name {
+    padding-left: 15px;
+    font-size: 8px
+}
+
+.options__menu {
+    margin-top: 15px;
+    height: 25em;
+}
+
+.options__menu a {
+    width: 100%;
+    padding: 5px 30px;
+    color: var(--blanco);
+    cursor: default;
+    display: block;
+    transition: color 300ms;
+}
+
+.options__menu a:hover {
+    background: var(--azuloscuro);
+}
+
+.options__menu .option {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.options__menu .option i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h4 {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.sali .option1 {
+    background: #373841;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    color: var(--blanco);
+}
+
+.sali .option1 i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.sali .option1 h4 {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    margin: 5px;
+    font-size: 3em;
+    font-weight: 590;
+
+}
+
+.cate_esta{
+    background: var(--gris);
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cate_esta .cate{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tipo select{
+    width: 10em;
+    height: 2em;
+}
+
+.cards{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--blanco);
+    border-radius: 10px;
+    border: 1px solid var(--gris);
+    width: 18em;
+    height: 25em;
+    margin: 1em;
+    padding: 20px;
+}
+
+.card-img {
+    background-image: url(../img/habitacion1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height:20em ;
+}
+
+.card-img p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3379b7b2;
+    width: 100%;
+    height: 5vh;
+    color: var(--blanco);
+}
+
+.card h3 {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: 590;
+}
+
+.card p {
+    text-align: justify;
+    margin-top: 10px;
+}
+.card .btn_r{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card button {
+    width: 45%;
+    padding: 3px;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #000;
+    border-radius: 3px;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 200;
+} 
+
+.card button.active{
+    background: var(--Magenta);
+    border: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        width: 5em;
+        height: auto;
+    }
+
+    .options__menu h4 {
+        display: none;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .sali h4 {
+        display: none;
+    }
+
+}

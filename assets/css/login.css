@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url(../img/bg-login.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Marcellus', serif;
+  height: 100vh;
+}
+
+form{
+  background: #3379b7d3;
+  background-image: url(../img/vector-login.svg);
+  background-repeat: no-repeat;
+  background-size:contain ;
+  width: 35%;
+  height: 35em;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.img{
+  width: 40%;
+  margin: 15px;
+}
+.fon .img img{
+  width: 100%;
+  height: 100%;
+}
+
+.usuario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.op{
+  width: 90%;
+}
+.op .userlogo{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.op .userlogo i{
+  background: rgb(237, 41, 129);
+  border: 1px solid aqua;
+  color: #fefefe;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.campo{
+  margin-top: 30px;
+}
+
+.campo label{
+  font-size: 25px;
+  color: #fefefe;
+}
+
+.campo input{
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+
+.campo1  button{
+  margin-top: 60px;
+  width: 100%;
+  height: 40px;
+  color: #fefefe;
+  background: black;
+  font-size: 25px;
+}
+.infor{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.infor p{
+  color: #fefefe;
+}
+
+.infor a{
+  color: #000;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+@media only screen and ( max-width: 900px){
+
+  form{
+    width: 50%;
+    height: 35em;
+    display: flex;
+  }
+}
+
+@media only screen and ( max-width: 500px){
+
+  form{
+    width: 90%;
+    height: 35em;
+    display: flex;
+  }
+
+  .infor{
+    font-size: 13px;
+  }
+
+  .infor a{
+    color: #000;
+    text-decoration: none;
+    margin-left: 0;
+  }
+}

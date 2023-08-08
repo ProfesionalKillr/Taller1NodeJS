@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+:root{
+    --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Marcellus', serif ;
+}
+
+
+header{
+    background: var(--azulnegro);
+    width: 14em;
+    height: 100vh;
+    position: fixed;
+}
+
+.logo-user{
+    background: var(--degradado);
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-user .logo{
+    background-image: url(../img/opiniones/Vector-opinion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo-user .logo img{
+    width: 4em;
+    padding: 10px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: var(--blanco);
+}
+
+.user .foto {
+    display: flex;
+    align-items: flex-end;
+    width: 3em;
+}
+
+.user .foto img{
+    width: 100%;
+}
+
+.user .name{
+    padding-left: 15px;
+    font-size: 8px
+}
+
+.options__menu{
+    height: 29em;
+    margin-top: 15px;
+}
+
+.options__menu a{
+    width: 100%;
+    padding: 5px 30px;
+    color: var(--blanco);
+    cursor: default;
+    display: block;
+    transition: color 300ms;
+}
+
+.options__menu a:hover{
+    background: var(--azuloscuro);
+}
+
+.options__menu .option{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.options__menu .option i{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h4{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+.sali .option1 {
+    background: #373841;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+    align-items: center;
+    color: var(--blanco);
+}
+
+.sali .option1 i{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.sali .option1 h4{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+main{
+    background-image: url(../img/fondo-dash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.actua{
+    background: #fefefed4;
+    width: 75%;
+    height: 90%;
+    margin-left: 14em;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.actua h1{
+    display: flex;
+    justify-content: center;
+}
+
+.conten{
+    display: flex;
+    margin-top: 20px;
+}
+.img-button{
+    margin-left: 50px;
+}
+.conten .fot{
+    width: 10em;
+}
+
+.conten .fot img{
+    width: 100%;
+    height: 100%;
+}
+
+.button{
+    background: var(--azuloscuro);
+    margin-top: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button i{
+    font-size: 30px;
+    color: var(--blanco);
+}
+
+.img-button button{
+    padding: 15px;
+    width: 100%;
+    margin-top: 15px;
+    background: var(--negro);
+    color: var(--blanco);
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+form{
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.form .input{
+    width: 19em;
+    height: 2em;
+    display: flex;
+}
+
+.tipo-numero{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.boton {
+    margin-left: 50px;
+}
+
+.tipo{
+    display: flex;
+    flex-direction: column;
+}
+
+.form button{
+    padding: 10px;
+    width: 30%;
+    margin-top: 15px;
+    background: var(--negro);
+    color: var(--blanco);
+}
+
+@media only screen and ( max-width: 768px){
+    
+    header{
+        width: 5em;
+    }
+
+    .options__menu h4{
+        display: none;
+    }
+
+    .name{
+        display: none;
+    }
+
+    .sali h4{
+        display: none;
+    }
+    
+    main{
+        padding: 5px;
+        height: max-content;
+    }
+
+    .actua{
+        width: 70%;
+        margin-left: 70px;
+        border-radius: 10px;
+        padding: 0;
+    }
+
+    .actua h1{
+        font-size: 20px;
+    }
+
+    .actua{
+        width: 75%;
+        margin-left: 5em;
+        border-radius: 10px;
+        padding: 0;
+    }
+   
+    .img-button{
+        margin-left: 30%;
+    }
+
+    .img-button .fot img{
+        width: 8em;
+    }
+
+    .conten{
+        flex-direction: column;
+    }
+
+    .img-button .button {
+        width: 63%;
+    }
+
+    .conten .fot{
+        width: 6em;
+        height: auto;
+    }
+
+    .img-button button{
+        display: none;
+    }
+
+    .tipo-numero{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .form {
+        display: flex;
+    }
+
+    .form button{
+        width: 50%;
+        margin-top: 15px;
+        background: var(--negro);
+        color: var(--blanco);
+    }
+
+    form{
+        width: 85%;
+        padding: 15px;
+    }
+
+
+    .boton{
+        margin-left: 0;
+    }
+}
